@@ -11,7 +11,7 @@ import type { ArtworkMeta, Bounds, RectXZ } from './types';
 
 type BuildOpts = { imagesBase: string; artworks: ArtworkMeta[] };
 
-/** a straight wall segment we can hang to */
+/** a straight wall segment we can hang to. */
 type WallSeg =
   | { kind: 'X';  z: number; x0: number; x1: number; nZ:  1 | -1 } // long along X, normal along Z
   | { kind: 'Z';  x: number; z0: number; z1: number; nX:  1 | -1 }; // long along Z, normal along X
